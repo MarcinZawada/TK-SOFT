@@ -6,6 +6,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class Main extends Application {
 
     @Override
@@ -17,7 +21,15 @@ public class Main extends Application {
     }
 
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args) throws ClassNotFoundException {
+        String username = "root";
+        String password = "00000000";
+        String conectionURL = "jdbc:mysql://localhost:3306";
+        Class.forName("com.mysql.jdbc.Driver");
+        try(Connection connection = DriverManager.getConnection(conectionURL, username, password)){
+            System.out.println("Conected");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
