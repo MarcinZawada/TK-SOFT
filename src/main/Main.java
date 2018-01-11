@@ -11,7 +11,7 @@ import java.sql.*;
 
 public class Main extends Application {
     private Stage primaryStage;
-    private Pane layout;
+    private static BorderPane mainlayout;
     private String errorMsg;
 
     @Override
@@ -26,18 +26,18 @@ public class Main extends Application {
     }
     public void showStartView() throws Exception{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/startView.fxml"));
-        Scene scene = new Scene(loader.load());
+        loader.setLocation(Main.class.getResource("view/startViewWorker.fxml"));
+        mainlayout = loader.load();
+        Scene scene = new Scene(mainlayout);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
 
-    public void showHomeView() throws Exception{
+    public static void goHomeView() throws Exception{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/homeView.fxml"));
-        Scene scene = new Scene(loader.load());
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        loader.setLocation(Main.class.getResource("view/homeViewWorker.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
     }
 
 

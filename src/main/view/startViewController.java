@@ -8,7 +8,7 @@ import main.Main;//kadhsj
 public class startViewController {
     private Main main;
     @FXML
-    public void logIn(ActionEvent event){
-
+    public void logIn(ActionEvent event) throws Exception {
+        main.goHomeView();
     }
 }
