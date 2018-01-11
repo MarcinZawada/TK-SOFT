@@ -14,9 +14,9 @@
          <children>
             <Button layoutX="252.0" layoutY="306.0" mnemonicParsing="false" onAction="#logIn" prefHeight="26.0" prefWidth="96.0" text="Log In" />
             <CheckBox fx:id="isAdmin" layoutX="249.0" layoutY="277.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="102.0" text="Administrator" />
-            <Label alignment="CENTER" layoutX="184.0" layoutY="246.0" prefHeight="18.0" prefWidth="232.0" text="errorMassange" textFill="#e41b1b" />
-            <PasswordField layoutX="173.0" layoutY="221.0" prefHeight="25.0" prefWidth="254.0" promptText="Password" />
-            <TextField layoutX="173.0" layoutY="181.0" prefHeight="25.0" prefWidth="252.0" promptText="Login" />
+            <Label fx:id="errorLabel" alignment="CENTER" layoutX="184.0" layoutY="246.0" prefHeight="18.0" prefWidth="232.0" textFill="#e41b1b" />
+            <PasswordField fx:id="password" layoutX="173.0" layoutY="221.0" prefHeight="25.0" prefWidth="254.0" promptText="Password" />
+            <TextField fx:id="login" layoutX="173.0" layoutY="181.0" prefHeight="25.0" prefWidth="252.0" promptText="Login" />
          </children>
       </Pane>
    </center>

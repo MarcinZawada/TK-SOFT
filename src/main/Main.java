@@ -12,7 +12,6 @@ import java.sql.*;
 public class Main extends Application {
     private Stage primaryStage;
     private static BorderPane mainlayout;
-    private String errorMsg;
 
     @Override
     public void start(Stage primaryStage) throws Exception{

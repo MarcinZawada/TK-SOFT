@@ -25,7 +25,6 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="6ba45542-231a-42b8-9b50-a63bb45c5134">
-        <schema name="lab3" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
         <schema name="tk-soft" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
       </connection>
     </loaded-nodes>
