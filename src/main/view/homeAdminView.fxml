@@ -26,9 +26,9 @@
       <VBox alignment="CENTER" prefHeight="377.0" prefWidth="159.0" spacing="10.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#addEmployee" prefHeight="25.0" prefWidth="129.0" text="Add new employee" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Add new producer" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Add keys" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Producers" />
+            <Button mnemonicParsing="false" onAction="#addProducer" prefHeight="25.0" prefWidth="129.0" text="Add new producer" />
+            <Button mnemonicParsing="false" onAction="#addKeys" prefHeight="25.0" prefWidth="132.0" text="Add keys" />
+            <Button mnemonicParsing="false" onAction="#pass" prefHeight="25.0" prefWidth="133.0" text="Passwords" />
             <Pane prefHeight="69.0" prefWidth="159.0">
                <children>
                   <Button layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#goWorker" prefHeight="25.0" prefWidth="132.0" text="Common mode" />

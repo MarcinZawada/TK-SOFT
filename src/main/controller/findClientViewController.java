@@ -59,7 +59,6 @@ public class findClientViewController implements Initializable{
 
     @FXML
     public void findOrdersAction(ActionEvent event) throws Exception {
-        System.out.println("Pressed Button");
         condition = "";
         ObservableList<Client> searchedClientsArray = FXCollections.observableArrayList();
         Connection conn = db.connect();

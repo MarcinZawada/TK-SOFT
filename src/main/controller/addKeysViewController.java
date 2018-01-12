@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import main.Main;//kadhsj
 
-public class addProducerViewController {
+public class addKeysViewController {
     private Main main;
     @FXML
     public void logout(ActionEvent event) throws Exception {

@@ -17,4 +17,13 @@ public class homeAdminViewController {
     public void addEmployee(ActionEvent event) throws Exception {
         main.goToView("view/addEmployeeView.fxml");
     }
+    public void addProducer(ActionEvent event) throws Exception {
+        main.goToView("view/addProducerView.fxml");
+    }
+    public void addKeys(ActionEvent event) throws Exception {
+        main.goToView("view/addKeysView.fxml");
+    }
+    public void pass(ActionEvent event) throws Exception {
+        main.goToView("view/passView.fxml");
+    }
 }

@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.addProducerViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.addKeysViewController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
@@ -48,30 +48,24 @@
                     <children>
                         <Pane prefHeight="475.0" prefWidth="528.0">
                             <children>
-                                <Label layoutX="224.0" layoutY="187.0" text="Country">
+                                <Label layoutX="274.0" layoutY="197.0" text="Count">
                                     <font>
                                         <Font size="14.0" />
                                     </font>
                                 </Label>
-                                <Label layoutX="71.0" layoutY="187.0" text="Name">
+                                <Label layoutX="71.0" layoutY="197.0" text="Product">
                                     <font>
                                         <Font size="14.0" />
                                     </font>
                                 </Label>
-                                <TextField layoutX="15.0" layoutY="234.0" />
-                                <TextField layoutX="177.0" layoutY="234.0" />
-                                <TextField layoutX="342.0" layoutY="234.0" />
-                                <Label layoutX="397.0" layoutY="187.0" prefHeight="20.0" prefWidth="51.0" text="Contact">
-                                    <font>
-                                        <Font size="14.0" />
-                                    </font>
-                                </Label>
-                                <Button layoutX="216.0" layoutY="289.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Add">
+                                <TextField layoutX="71.0" layoutY="234.0" prefHeight="25.0" prefWidth="179.0" />
+                                <TextField layoutX="274.0" layoutY="234.0" />
+                                <Button layoutX="228.0" layoutY="272.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Add">
                                     <font>
                                         <Font size="13.0" />
                                     </font>
                                 </Button>
-                                <Label layoutX="198.0" layoutY="55.0" text="New producer">
+                                <Label layoutX="231.0" layoutY="58.0" text="Add keys">
                                     <font>
                                         <Font size="16.0" />
                                     </font>

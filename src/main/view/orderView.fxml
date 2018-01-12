@@ -56,7 +56,6 @@
         <VBox alignment="CENTER" prefHeight="453.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
             <children>
                 <Button mnemonicParsing="false" onAction="#addorder" text="Add order" />
-                <Button mnemonicParsing="false" text="Update order" />
             <Button mnemonicParsing="false" onAction="#findorder" text="Find order" />
             </children></VBox>
     </right>

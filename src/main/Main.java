@@ -19,10 +19,6 @@ public class Main extends Application {
         this.primaryStage.setTitle("TK-Soft");
         showStartView();
     }
-
-    public void logIn(){
-
-    }
     public void showStartView() throws Exception{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/startView.fxml"));

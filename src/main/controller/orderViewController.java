@@ -94,5 +94,6 @@ public class orderViewController implements Initializable{
         countColumn.setCellValueFactory(new PropertyValueFactory<Order, Integer>("count"));
         detailsColumn.setCellValueFactory(new PropertyValueFactory<Order, String >("details"));
 
+        orderTable.setItems(orders);
     }
 }
