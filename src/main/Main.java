@@ -20,13 +20,11 @@ public class Main extends Application {
         showStartView();
     }
 
-    public void logIn(){
 
-    }
     public void showStartView() throws Exception{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/startView.fxml"));
-        mainlayout = loader.load();
+        mainlayout=loader.load();
         Scene scene = new Scene(mainlayout);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -45,7 +43,30 @@ public class Main extends Application {
         BorderPane homeBorderPane = loader.load();
         mainlayout.setCenter(homeBorderPane);
     }
-
+    public static void goStartView() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/startView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+    public static void goClients() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/clientView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+    public static void goOrders() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/orderView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+    public static void goProducts() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/productView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
 
     public static void main(String[] args) throws ClassNotFoundException {
         Application.launch(args);
@@ -53,15 +74,9 @@ public class Main extends Application {
         String password = "00000000";
         String conectionURL = "jdbc:mysql://localhost:3306";
         Class.forName("com.mysql.jdbc.Driver");
-        try(Connection connection = (DriverManager.getConnection(conectionURL, username, password));
-           Statement statement = connection.createStatement()){
-            /*    //statement.executeUpdate("");
-                ResultSet resultSet = statement.executeQuery("Select * from lab3.ludzie");
-               while(resultSet.next()){
-                    System.out.println(resultSet.getInt(1));
-                }
+        try(Connection connection = DriverManager.getConnection(conectionURL, username, password);
+            Statement statement = connection.createStatement()){
 
-                PreparedStatement preparedStatement = connection.prepareStatement("select * from lab3.ludzie where PESEL = ?");*/
         } catch (SQLException e) {
             e.printStackTrace();
         }
