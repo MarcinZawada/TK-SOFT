@@ -9,7 +9,7 @@ public class productViewController {
     private Main main;
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.goStartView();
+        main.showStartView();
     }
     public void clients(ActionEvent event) throws Exception {
         main.goClients();
@@ -19,5 +19,8 @@ public class productViewController {
     }
     public void products(ActionEvent event) throws Exception {
         main.goProducts();
+    }
+    public void addProducts(ActionEvent event) throws Exception {
+        main.goAddProduct();
     }
 }

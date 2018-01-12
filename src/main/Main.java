@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import main.view.addClientViewController;
 
 import java.sql.*;
 
@@ -20,11 +21,13 @@ public class Main extends Application {
         showStartView();
     }
 
+    public void logIn(){
 
+    }
     public void showStartView() throws Exception{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/startView.fxml"));
-        mainlayout=loader.load();
+        mainlayout = loader.load();
         Scene scene = new Scene(mainlayout);
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -40,12 +43,6 @@ public class Main extends Application {
     public static void goHomeAdmin() throws Exception{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/homeAdminView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-    public static void goStartView() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/startView.fxml"));
         BorderPane homeBorderPane = loader.load();
         mainlayout.setCenter(homeBorderPane);
     }
@@ -67,7 +64,6 @@ public class Main extends Application {
         BorderPane homeBorderPane = loader.load();
         mainlayout.setCenter(homeBorderPane);
     }
-
     public static void goAddClient() throws Exception{
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource("view/addClientView.fxml"));
@@ -75,8 +71,23 @@ public class Main extends Application {
         mainlayout.setCenter(homeBorderPane);
     }
 
+    public static void goAddOrder() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/addOrderView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+
+    public static void goAddProduct() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/addProductView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+
     public static void main(String[] args) throws ClassNotFoundException {
         Application.launch(args);
+
     }
 }
 

@@ -14,22 +14,22 @@
 <?import javafx.scene.text.Font?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.addClientViewController">
-    <top>
-        <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
-            <menus>
-                <Menu mnemonicParsing="false" text="Log out">
-                    <items>
-                        <MenuItem mnemonicParsing="false" onAction="#logout" text="Close" />
-                    </items>
-                </Menu>
+   <top>
+      <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Log out">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Close" />
+               </items>
+            </Menu>
             <Menu mnemonicParsing="false" text="Back">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#goBack" text="Home" />
                </items>
             </Menu>
-            </menus>
-        </MenuBar>
-    </top>
+         </menus>
+      </MenuBar>
+   </top>
    <center>
       <Label text="Adding client" BorderPane.alignment="TOP_CENTER">
          <font>

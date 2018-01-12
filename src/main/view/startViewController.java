@@ -3,6 +3,7 @@ package main.view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -19,6 +20,7 @@ public class startViewController implements Initializable{
     private Main main;
     private DbConnector db;
     private final String logErrorMsg = "";
+    public String currentWorker;
 
     @FXML
     private CheckBox isAdmin;
@@ -48,6 +50,7 @@ public class startViewController implements Initializable{
                 if (isAdmin.isSelected()) {
                     main.goHomeAdmin();
                 } else {
+
                     main.goHomeWorker();
                 }
             }

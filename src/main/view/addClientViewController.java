@@ -36,7 +36,7 @@ public class addClientViewController implements Initializable {
 
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.goStartView();
+        main.showStartView();
     }
     public void goBack(ActionEvent event) throws Exception {
         main.goHomeWorker();
@@ -59,20 +59,27 @@ public class addClientViewController implements Initializable {
                 if(!number.getText().equals("")) {
                     num = Integer.parseInt(number.getText());
                 }
-            }catch (Exception e){
-
+            }catch (NumberFormatException e){
+                error.setTextFill(Paint.valueOf("e41b1b"));
+                error.setText("Bad number format");
+                return;
             }
 
             if(num==0){
                 callableStatement = conn.prepareCall("{call addClient(?,?,?,null)}");
             }else{
-                callableStatement.setInt("Phone_number", num);
+                callableStatement.setInt(4, num);
             }
-            callableStatement.setString("Name",name.getText());
-            callableStatement.setString("Surname",surname.getText());
-            callableStatement.setString("Mail",mail.getText());
-
-            callableStatement.executeUpdate();
+            callableStatement.setString(1,name.getText());
+            callableStatement.setString(2,surname.getText());
+            callableStatement.setString(3,mail.getText());
+            try {
+                callableStatement.executeUpdate();
+            }catch (SQLException e){
+                error.setTextFill(Paint.valueOf("e41b1b"));
+                error.setText(e.getMessage());
+                return;
+            }
             error.setTextFill(Paint.valueOf("#1de31b"));
             error.setText("client added");
 
@@ -85,5 +92,9 @@ public class addClientViewController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         db = new DbConnector();
+    }
+
+    public void Test(String s){
+        name.setText(s);
     }
 }

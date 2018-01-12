@@ -52,7 +52,7 @@
     <right>
         <VBox alignment="CENTER" prefHeight="453.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" text="Add product" />
+                <Button mnemonicParsing="false" onAction="#addProducts" text="Add product" />
                 <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Update product" />
                 <Button mnemonicParsing="false" text="Find product" />
             </children></VBox>

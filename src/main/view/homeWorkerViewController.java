@@ -9,7 +9,7 @@ public class homeWorkerViewController {
     private Main main;
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.goStartView();
+        main.showStartView();
     }
     public void clients(ActionEvent event) throws Exception {
         main.goClients();
