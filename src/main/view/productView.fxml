@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.productViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.productViewController">
     <top>
         <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
             <menus>
@@ -34,6 +34,7 @@
                 <Button mnemonicParsing="false" onAction="#clients" prefHeight="25.0" prefWidth="62.0" text="Clients" />
                 <Button mnemonicParsing="false" onAction="#orders" prefHeight="25.0" prefWidth="62.0" text="Orders" />
                 <Button mnemonicParsing="false" onAction="#products" text="Products" />
+            <Button mnemonicParsing="false" onAction="#producers" text="Producers" />
             </children>
         </VBox>
     </left>
@@ -52,9 +53,7 @@
     <right>
         <VBox alignment="CENTER" prefHeight="453.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" onAction="#addProducts" text="Add product" />
-                <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Update product" />
-                <Button mnemonicParsing="false" text="Find product" />
+                <Button mnemonicParsing="false" onAction="#findproduct" text="Find product" />
             </children></VBox>
     </right>
 </BorderPane>

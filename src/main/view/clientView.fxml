@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.clientViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.clientViewController">
     <top>
         <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
             <menus>
@@ -33,7 +33,8 @@
             </Label>
                 <Button mnemonicParsing="false" onAction="#clients" prefHeight="25.0" prefWidth="62.0" text="Clients" />
                 <Button mnemonicParsing="false" onAction="#orders" prefHeight="25.0" prefWidth="62.0" text="Orders" />
-                <Button fx:id="table" mnemonicParsing="false" onAction="#products" text="Products" />
+                <Button mnemonicParsing="false" onAction="#products" text="Products" />
+            <Button mnemonicParsing="false" onAction="#producers" text="Producers" />
             </children>
         </VBox>
     </left>
@@ -54,7 +55,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#addClient" text="Add client" />
             <Button mnemonicParsing="false" text="Update client" />
-            <Button mnemonicParsing="false" text="Find client" />
+            <Button mnemonicParsing="false" onAction="#findClient" text="Find client" />
          </children></VBox>
     </right>
 </BorderPane>

@@ -1,4 +1,4 @@
-package main.view;
+package main.controller;
 
 
 import javafx.event.ActionEvent;
@@ -39,7 +39,7 @@ public class addClientViewController implements Initializable {
         main.showStartView();
     }
     public void goBack(ActionEvent event) throws Exception {
-        main.goHomeWorker();
+        main.goToView("view/homeWorkerView.fxml");
     }
 
     @FXML
@@ -92,9 +92,5 @@ public class addClientViewController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         db = new DbConnector();
-    }
-
-    public void Test(String s){
-        name.setText(s);
     }
 }

@@ -1,4 +1,4 @@
-package main.view;
+package main.controller;
 
 
 import javafx.event.ActionEvent;
@@ -20,10 +20,10 @@ public class addProductViewController {
     private TextField price;
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.showStartView();
+        main.goToView("view/startView.fxml");
     }
     public void goBack(ActionEvent event) throws Exception {
-        main.goHomeWorker();
+        main.goToView("view/homeWorkerView.fxml");
     }
     public void addProduct(ActionEvent event) throws Exception{
         errorLabel.setText("");

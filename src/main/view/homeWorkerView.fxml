@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.view.homeWorkerViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.homeWorkerViewController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -26,6 +26,7 @@
             <Button mnemonicParsing="false" onAction="#clients" prefHeight="25.0" prefWidth="62.0" text="Clients" />
             <Button mnemonicParsing="false" onAction="#orders" prefHeight="25.0" prefWidth="62.0" text="Orders" />
             <Button mnemonicParsing="false" onAction="#products" text="Products" />
+            <Button mnemonicParsing="false" onAction="#producers" text="Producers" />
          </children>
       </VBox>
    </left>

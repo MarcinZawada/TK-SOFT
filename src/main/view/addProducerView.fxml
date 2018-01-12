@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.addOrderViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.addProducerViewController">
     <top>
         <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
             <menus>
@@ -63,27 +63,26 @@
                         </HBox>
                         <HBox alignment="TOP_CENTER" prefHeight="48.0" prefWidth="800.0" spacing="3.0">
                             <children>
-                                <TextField fx:id="product" prefHeight="25.0" prefWidth="168.0" />
-                                <TextField fx:id="email" prefHeight="25.0" prefWidth="167.0" />
-                                <TextField fx:id="count" prefHeight="25.0" prefWidth="56.0" />
+                                <TextField prefHeight="25.0" prefWidth="168.0" />
+                                <TextField prefHeight="25.0" prefWidth="167.0" />
+                                <TextField prefHeight="25.0" prefWidth="56.0" />
                             </children>
                         </HBox>
-                  <VBox alignment="TOP_CENTER" prefHeight="202.0" prefWidth="800.0">
-                     <children>
-                        <Label text="Details">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Label>
-                        <TextArea fx:id="details" prefHeight="77.0" prefWidth="762.0" />
-                        <Button mnemonicParsing="false" onAction="#addOrder" prefHeight="38.0" prefWidth="83.0" text="Add order">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </Button>
-                        <Label fx:id="error" alignment="CENTER" prefHeight="17.0" prefWidth="167.0" />
-                     </children>
-                  </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="202.0" prefWidth="800.0">
+                            <children>
+                                <Label text="Details">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <TextArea prefHeight="77.0" prefWidth="762.0" />
+                                <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="83.0" text="Add order">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </VBox>
                     </children>
                 </VBox>
             </children>

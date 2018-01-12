@@ -1,17 +1,17 @@
-package main.view;
+package main.controller;
 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import main.Main;//kadhsj
 
-public class addOrderViewController {
+public class addProducerViewController {
     private Main main;
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.showStartView();
+        main.goToView("view/startView.fxml");
     }
     public void goBack(ActionEvent event) throws Exception {
-        main.goHomeWorker();
+        main.goToView("view/homeWorkerView.fxml");
     }
 }

@@ -1,4 +1,4 @@
-package main.view;
+package main.controller;
 
 
 import javafx.beans.property.SimpleStringProperty;
@@ -38,19 +38,25 @@ public class clientViewController implements Initializable{
 
     @FXML
     public void logout(ActionEvent event) throws Exception {
-        main.showStartView();
+        main.goToView("view/startView.fxml");
     }
     public void clients(ActionEvent event) throws Exception {
-        main.goClients();
+        main.goToView("view/clientView.fxml");
     }
     public void orders(ActionEvent event) throws Exception {
-        main.goOrders();
+        main.goToView("view/orderView.fxml");
     }
     public void products(ActionEvent event) throws Exception {
-        main.goProducts();
+        main.goToView("view/productView.fxml");
+    }
+    public void producers(ActionEvent event) throws Exception {
+        main.goToView("view/producerView.fxml");
     }
     public void addClient(ActionEvent event) throws Exception {
-        main.goAddClient();
+        main.goToView("view/addClientView.fxml");
+    }
+    public void findClient(ActionEvent event) throws Exception {
+        main.goToView("view/findClientView.fxml");
     }
 
     @Override

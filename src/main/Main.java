@@ -6,7 +6,6 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import main.view.addClientViewController;
 
 import java.sql.*;
 
@@ -33,58 +32,12 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public static void goHomeWorker() throws Exception{
+    public static void goToView(String path) throws Exception{
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/homeWorkerView.fxml"));
+        loader.setLocation(Main.class.getResource(path));
         BorderPane homeBorderPane = loader.load();
         mainlayout.setCenter(homeBorderPane);
     }
-
-    public static void goHomeAdmin() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/homeAdminView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-    public static void goClients() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/clientView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-    public static void goOrders() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/orderView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-    public static void goProducts() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/productView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-    public static void goAddClient() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/addClientView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-
-    public static void goAddOrder() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/addOrderView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-
-    public static void goAddProduct() throws Exception{
-        FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(Main.class.getResource("view/addProductView.fxml"));
-        BorderPane homeBorderPane = loader.load();
-        mainlayout.setCenter(homeBorderPane);
-    }
-
     public static void main(String[] args) throws ClassNotFoundException {
         Application.launch(args);
 

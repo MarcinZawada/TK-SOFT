@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.orderViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.producerViewController">
     <top>
         <MenuBar prefHeight="20.0" prefWidth="606.0" BorderPane.alignment="CENTER">
             <menus>
@@ -26,7 +26,7 @@
     <left>
         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="80.0" spacing="10.0" BorderPane.alignment="CENTER">
             <children>
-                <Label text="Orders">
+                <Label text="Producers">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -34,19 +34,16 @@
                 <Button mnemonicParsing="false" onAction="#clients" prefHeight="25.0" prefWidth="62.0" text="Clients" />
                 <Button mnemonicParsing="false" onAction="#orders" prefHeight="25.0" prefWidth="62.0" text="Orders" />
                 <Button mnemonicParsing="false" onAction="#products" text="Products" />
-            <Button mnemonicParsing="false" onAction="#producers" text="Producers" />
+                <Button mnemonicParsing="false" onAction="#producers" text="Producers" />
             </children>
         </VBox>
     </left>
     <center>
-        <TableView fx:id="orderTable" prefHeight="453.0" prefWidth="519.0" BorderPane.alignment="CENTER">
+        <TableView prefHeight="453.0" prefWidth="519.0" BorderPane.alignment="CENTER">
             <columns>
-                <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
-                <TableColumn fx:id="productColumn" prefWidth="75.0" text="Product" />
-                <TableColumn fx:id="statusColumn" prefWidth="75.0" text="Status" />
-                <TableColumn fx:id="clientColumn" prefWidth="75.0" text="Client" />
-                <TableColumn fx:id="countColumn" prefWidth="83.33334350585938" text="Count" />
-            <TableColumn fx:id="detailsColumn" prefWidth="75.0" text="Details" />
+                <TableColumn prefWidth="75.0" text="Name" />
+                <TableColumn prefWidth="75.0" text="Country" />
+                <TableColumn prefWidth="75.0" text="Contact" />
             </columns>
             <columnResizePolicy>
                 <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -55,9 +52,7 @@
     <right>
         <VBox alignment="CENTER" prefHeight="453.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
             <children>
-                <Button mnemonicParsing="false" onAction="#addorder" text="Add order" />
-                <Button mnemonicParsing="false" text="Update order" />
-            <Button mnemonicParsing="false" onAction="#findorder" text="Find order" />
+                <Button mnemonicParsing="false" onAction="#findproducer" text="Find producer" />
             </children></VBox>
     </right>
 </BorderPane>

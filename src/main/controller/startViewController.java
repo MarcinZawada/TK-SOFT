@@ -1,4 +1,4 @@
-package main.view;
+package main.controller;
 
 
 import javafx.event.ActionEvent;
@@ -48,10 +48,10 @@ public class startViewController implements Initializable{
             ResultSet resultSet = preparedStatement.executeQuery();
             if(resultSet.next()){
                 if (isAdmin.isSelected()) {
-                    main.goHomeAdmin();
+                    main.goToView("view/homeAdminView.fxml");
                 } else {
 
-                    main.goHomeWorker();
+                    main.goToView("view/homeWorkerView.fxml");
                 }
             }
             else{
