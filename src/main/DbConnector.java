@@ -9,7 +9,7 @@ public class DbConnector {
     public Connection connect() {
         String username = "root";
         String password = "00000000";
-        String conectionURL = "jdbc:mysql://localhost:3306";
+        String conectionURL = "jdbc:mysql://localhost/tk-soft";
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection connection = (DriverManager.getConnection(conectionURL, username, password));

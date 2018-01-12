@@ -68,18 +68,15 @@ public class Main extends Application {
         mainlayout.setCenter(homeBorderPane);
     }
 
+    public static void goAddClient() throws Exception{
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(Main.class.getResource("view/addClientView.fxml"));
+        BorderPane homeBorderPane = loader.load();
+        mainlayout.setCenter(homeBorderPane);
+    }
+
     public static void main(String[] args) throws ClassNotFoundException {
         Application.launch(args);
-        String username = "root";
-        String password = "00000000";
-        String conectionURL = "jdbc:mysql://localhost:3306";
-        Class.forName("com.mysql.jdbc.Driver");
-        try(Connection connection = DriverManager.getConnection(conectionURL, username, password);
-            Statement statement = connection.createStatement()){
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
     }
 }
 
